@@ -2,7 +2,11 @@ import React from 'react'
 import logo from '../Images/logo-for-tujuane.png'
 import colorLogo from '../Images/color-logo.png'
 
-const Nav = ({ minimal, authToken }) => {
+const Nav = ({ minimal, authToken, setShowModal }) => {
+
+  const handleClick = () => {
+    setShowModal(true)
+  }
   
   return (
     <nav>
@@ -10,7 +14,7 @@ const Nav = ({ minimal, authToken }) => {
         <img className='logo' src={minimal ? colorLogo : logo}/>  
       </div>
        
-      {!authToken && !minimal && <button className="nav-button">Log in</button>}   
+      {!authToken && !minimal && <button className="nav-button" onClick={handleClick}>Log in</button>}   
     </nav>
   )
 }
