@@ -1,8 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { useState } from 'react';
+import Nav from "../components/Nav";
 
 const Onboarding = () => {
   return (
-    <div>Onboarding</div>
+    <>
+        <Nav
+            minimal={true}
+            setShowModal={() => {}}
+            showModal={false}       
+        />
+        <div>
+
+        </div>
+    </>
   )
 }
 
