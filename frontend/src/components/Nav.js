@@ -2,12 +2,13 @@ import React from 'react'
 import logo from '../Images/logo-for-tujuane.png'
 import colorLogo from '../Images/color-logo.png'
 
-const Nav = ({ authToken, minimal, setShowModal, showModal, setIsSignUp }) => {
+const Nav = ({ minimal, setShowModal, showModal, setIsSignUp }) => {
     const handleClick = () => {
     setShowModal(true);
     setIsSignUp(false);
   }
-  
+
+  const authToken = true  
   return (
     <nav>
       <div className="logo-container">
