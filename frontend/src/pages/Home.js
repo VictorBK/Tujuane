@@ -22,12 +22,13 @@ const Home = () => {
 
     return (
         <div className="overlay">
-            <Nav minimal={false}
-                
-               
+            <Nav
+                authToken={authToken}
+                minimal={false}
                 setShowModal={setShowModal}
                 showModal={showModal}
-                setIsSignUp={setIsSignUp}/>
+                setIsSignUp={setIsSignUp}
+            />
             <div className="home">
                 <h1 className="primary-title">Swipe Right®</h1>
                 <button className="primary-button" onClick={handleClick}>
