@@ -186,7 +186,7 @@ const OnBoarding = () => {
                             type="text"
                             name="about"
                             required={true}
-                            placeholder="I like long walks..."
+                            placeholder="Let's explore..."
                             value={formData.about}
                             onChange={handleChange}
                         />
